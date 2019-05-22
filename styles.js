@@ -632,7 +632,7 @@ if(false) {}
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!*************************************************************************************************************************************************!*\
   !*** multi ./node_modules/bootstrap/dist/css/bootstrap.min.css ./node_modules/datatables.net-dt/css/jquery.dataTables.min.css ./src/styles.css ***!
   \*************************************************************************************************************************************************/
@@ -646,5 +646,5 @@ module.exports = __webpack_require__(/*! C:\Users\nilamp\Desktop\Nilam\Angular6\
 
 /***/ })
 
-},[[3,"runtime"]]]);
+},[[2,"runtime"]]]);
 //# sourceMappingURL=styles.js.map
