@@ -91,7 +91,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.js",
+               "node_modules/jquery/dist/jquery.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/datatables.net/js/jquery.dataTables.min.js"
             ],
@@ -136,41 +136,6 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "my-asset": {
-      "root": "projects/my-asset",
-      "sourceRoot": "projects/my-asset/src",
-      "projectType": "library",
-      "prefix": "lib",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/my-asset/tsconfig.lib.json",
-            "project": "projects/my-asset/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/my-asset/src/test.ts",
-            "tsConfig": "projects/my-asset/tsconfig.spec.json",
-            "karmaConfig": "projects/my-asset/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/my-asset/tsconfig.lib.json",
-              "projects/my-asset/tsconfig.spec.json"
-            ],
             "exclude": [
               "**/node_modules/**"
             ]

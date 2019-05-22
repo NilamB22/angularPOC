@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class DataService {
-  ROOT_URL = '../assets/data.json';
+  ROOT_URL = './assets/data.json';
 
   constructor(private http: HttpClient) {}
 
