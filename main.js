@@ -697,7 +697,7 @@ __webpack_require__.r(__webpack_exports__);
 var DataService = /** @class */ (function () {
     function DataService(http) {
         this.http = http;
-        this.ROOT_URL = '../assets/data.json';
+        this.ROOT_URL = './assets/data.json';
     }
     DataService.prototype.getDataService = function () {
         var observable = this.http.get(this.ROOT_URL).map(function (response) { return response; });
