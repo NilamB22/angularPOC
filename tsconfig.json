@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "my-asset": [
+        "dist/my-asset"
+      ],
+      "my-asset/*": [
+        "dist/my-asset/*"
+      ]
+    }
   }
 }
