@@ -343,7 +343,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\r\n  <div class=\"panel panel-danger\">\r\n    <div class=\"panel-heading\">\r\n      <h4 class=\"panel-title\">Country Parent Component</h4>\r\n    </div>\r\n    <div class=\"panel-body\">\r\n      Select Country :\r\n      <select [(ngModel)]=\"selectedCountry\">\r\n        <option *ngFor=\"let country of countries\" value={{country}} >\r\n          {{country | filter:'A'}}\r\n        </option>\r\n      </select>\r\n      <br /> <br />\r\n      Selected City For {{selectedCountry}} : <b>{{selectedCity}}</b>\r\n      <br /> <br />\r\n      <cities-component Country=\"{{selectedCountry}}\" (cityNotification)=\"getSelectedCity($event)\">\r\n      </cities-component>\r\n    </div>\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"container-fluid\">\r\n  <div class=\"panel panel-danger\">\r\n    <div class=\"panel-heading\">\r\n      <h4 class=\"panel-title\">Country Parent Component</h4>\r\n    </div>\r\n    <div class=\"panel-body\">\r\n      Select Country :\r\n      <select [(ngModel)]=\"selectedCountry\">\r\n        <option *ngFor=\"let country of countries\" value={{country}} >\r\n          {{country}}\r\n        </option>\r\n      </select>\r\n      <br /> <br />\r\n      Selected City For {{selectedCountry}} : <b>{{selectedCity}}</b>\r\n      <br /> <br />\r\n      <cities-component Country=\"{{selectedCountry}}\" (cityNotification)=\"getSelectedCity($event)\">\r\n      </cities-component>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ }),
 
@@ -465,12 +465,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _services_dialog_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../services/dialog.service */ "./src/app/services/dialog.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+
 
 
 
 var LoginComponent = /** @class */ (function () {
-    function LoginComponent(_dialogService) {
+    function LoginComponent(_dialogService, router) {
         this._dialogService = _dialogService;
+        this.router = router;
         this.loginData = {};
         this.bgcolor = '';
     }
@@ -481,6 +484,7 @@ var LoginComponent = /** @class */ (function () {
     LoginComponent.prototype.validateLogin = function (loginData) {
         if (loginData.UserName == 'test' && loginData.Password == 'test') {
             this.bgcolor = 'green';
+            this.router.navigate(['./country']);
         }
         else {
             this.bgcolor = 'red';
@@ -497,7 +501,8 @@ var LoginComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./login.component.html */ "./src/app/login/login.component.html"),
             styles: [__webpack_require__(/*! ./login.component.css */ "./src/app/login/login.component.css")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_dialog_service__WEBPACK_IMPORTED_MODULE_2__["DialogService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_services_dialog_service__WEBPACK_IMPORTED_MODULE_2__["DialogService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
     ], LoginComponent);
     return LoginComponent;
 }());
