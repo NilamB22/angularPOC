@@ -7,7 +7,7 @@
       Select Country :
       <select [(ngModel)]="selectedCountry">
         <option *ngFor="let country of countries" value={{country}} >
-          {{country | filter:'A'}}
+          {{country}}
         </option>
       </select>
       <br /> <br />

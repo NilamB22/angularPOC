@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Observable }    from 'rxjs';
 import { DialogService } from '../services/dialog.service';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'login-component',
@@ -9,7 +10,8 @@ import { DialogService } from '../services/dialog.service';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(public _dialogService:DialogService) { }
+  constructor(public _dialogService:DialogService,
+    public router:Router) { }
   ngOnInit() { }
 
   loginData: any = {};
@@ -23,7 +25,8 @@ export class LoginComponent implements OnInit {
    */
   public validateLogin(loginData): void {
     if (loginData.UserName == 'test' && loginData.Password == 'test') {
-      this.bgcolor = 'green';
+     this.bgcolor = 'green';
+     this.router.navigate(['./country']);
     }
     else {
       this.bgcolor = 'red';
