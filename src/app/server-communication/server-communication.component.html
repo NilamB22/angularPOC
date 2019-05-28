@@ -1,10 +1,10 @@
 <div class="container-fluid">
   <div class="panel panel-danger">
     <div class="panel-heading">
-      <h3 class="panel-title">Server Communication & Observables</h3>
+      <h4 class="panel-title">Server Communication & Observables</h4>
     </div>
     <div class="panel-body">
-      <button type="submit" (click)="getData()" class="btn btn-primary" id="display_data">Display Data</button>
+      <button type="submit" (click)="getData()" class="btn btn-primary p-2" id="display_data">Display Data</button>
 
       <div *ngIf="isError!=undefined" style="color:red">
         {{isError}}

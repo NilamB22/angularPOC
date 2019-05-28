@@ -1,0 +1,10 @@
+.bg-col
+{
+    background:darkcyan;
+}
+
+.bg-col button
+{
+    color:white;
+    font-size: medium;
+}

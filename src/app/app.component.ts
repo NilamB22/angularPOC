@@ -9,4 +9,5 @@ export class AppComponent {
   ComponentTitle: string = "Angular"; 
   FontColor: string = "panel-heading-custom";
   CurrentDate:Date=new Date();
+
 }

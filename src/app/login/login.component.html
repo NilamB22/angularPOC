@@ -1,5 +1,6 @@
-<div class="container-fluid loginForm">
-    <div class="panel panel-danger">
+
+<div class="container-fluid">
+    <div class="panel panel-danger loginForm">
         <div class="panel-heading">
             <h3 class="panel-title">Login</h3>
           </div>
@@ -19,7 +20,7 @@
                       </div>
                       <br/>
                       <div class="align-center">
-                          <button type="submit" (click)="validateLogin(loginData)" class="btn btn-default" id="login">Sign In</button>
+                          <button type="submit" (click)="validateLogin(loginData)" class="btn btn-primary" id="login">Sign In</button>
                       </div>
                       <div class="checkbox">
                           <label><input type="checkbox" value="" id='RememberMe'  name= "RememberMe" [(ngModel)] = "loginData.RememberMe" appValidate>Remember Me</label>

@@ -1,27 +1,25 @@
 <div class="container">
-  <h2 align="center">
-      <img alt="Home" height="40" src="./assets/angular-logo.png" title="Home" width="150" class="ng-star-inserted">
+<div class="p-2">  
+<h2 align="center">
+<img alt="Home" height="40" src="./assets/logo-nav.png" title="Home"  class="ng-star-inserted">
 Home Page </h2>
+</div>
 
-  <div class="panel panel-primary">
-    <div class="panel-heading">
-      <h3 class="panel-title {{FontColor}}">{{ComponentTitle}}</h3>
-    </div>
-    <div class="panel-body">
+<div class="panel panel-primary bg-col p-2">
 
-      <button routerLink="/login" class="btn btn-default" id="login">Login</button>&nbsp;
-      <button routerLink="/country" class="btn btn-default" id="country">country</button>&nbsp;
-      <button routerLink="/ServerCommunication" class="btn btn-default" id="server communication">server communication</button>&nbsp;
-      <button routerLink="/SearchData" class="btn btn-default" id="search_data">Search Data</button>
-      <hr>
-      <router-outlet></router-outlet>
+<div class="panel-body">
 
-      <!-- <login-component></login-component>
-        <app-countries></app-countries>
-        <server-communication></server-communication> 
-        <search-data></search-data>
-      -->
+<button routerLink="/login" class="btn btn-default" id="login">Login</button>&nbsp;
+<button routerLink="/country" class="btn btn-default" id="country">Country</button>&nbsp;
+<button routerLink="/ServerCommunication" class="btn btn-default" id="server communication">Server Communication</button>&nbsp;
+<button routerLink="/SearchData" class="btn btn-default" id="search_data">Search Data</button>
 
-    </div>
-  </div>
+</div>
+</div>
+<div class="card">
+<div class="card-body">
+<router-outlet></router-outlet>
+</div>
+</div>
+
 </div>

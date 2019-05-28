@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Observable }    from 'rxjs';
 import { DialogService } from '../services/dialog.service';
 
