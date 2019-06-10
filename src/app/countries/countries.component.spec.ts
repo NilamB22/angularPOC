@@ -4,7 +4,7 @@ import { CountriesComponent } from './countries.component';
 import { CitiesComponent } from '../cities/cities.component';
 
 import { FormsModule } from '@angular/forms';
-import { FilterPipe } from '../filter.pipe';
+import { FilterPipe } from '../pipe/filter.pipe';
 
 describe('CountriesComponent', () => {
   let component: CountriesComponent;

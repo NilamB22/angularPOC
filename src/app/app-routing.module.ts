@@ -6,6 +6,8 @@ import { CountriesComponent } from './countries/countries.component';
 import { ServerCommunicationComponent } from './server-communication/server-communication.component';
 import { CanDeactivateGuardService } from './services/can-deactivate-guard.service';
 import { SearchDataComponent } from './search-data/search-data.component';
+import { EnquiryComponent} from './enquiry/enquiry.component'
+import { ObservableComponent } from './observable/observable.component';
 
 const routes :Routes =[
   { 
@@ -24,6 +26,14 @@ const routes :Routes =[
   { 
     path: 'SearchData', 
     component: SearchDataComponent 
+  },
+  {
+    path:'Enquiry',
+    component:EnquiryComponent
+  },
+  {
+    path:'Observable',
+    component:ObservableComponent
   },
   {
     path: '**', 

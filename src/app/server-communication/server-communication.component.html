@@ -18,13 +18,14 @@
             <tr>
                 <th>Name</th>
                 <th>Code</th>
+                <th>test</th>
               
             </tr>
           </thead>
           <tr *ngFor="let d of resultData" let i = index>
             <td>{{d.name}}</td>
             <td>{{d.code}}</td>
-         
+            <td>{{d?.test}}</td>
           </tr>
         </table>
         </div>

@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { ValidateDirective } from './validate.directive';
+import { ValidateDirective } from './directive/validate.directive';
 import { CountriesComponent } from './countries/countries.component';
 import { CitiesComponent } from './cities/cities.component';
 
 import { MyService } from './services/my.service';
-import { FilterPipe } from './filter.pipe';
+import { FilterPipe } from './pipe/filter.pipe';
 import { ServerCommunicationComponent } from './server-communication/server-communication.component';
 import { AppRoutingModule } from './app-routing.module';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -20,6 +20,9 @@ import { SearchDataComponent } from './search-data/search-data.component';
 import { DataService } from './services/data.service';
 
 import { HttpClientModule} from "@angular/common/http";
+import { EnquiryComponent } from './enquiry/enquiry.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { ObservableComponent } from './observable/observable.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { HttpClientModule} from "@angular/common/http";
     FilterPipe,
     ServerCommunicationComponent,
     WelcomeComponent,
-    SearchDataComponent
+    SearchDataComponent,
+    EnquiryComponent,
+    FeedbackComponent,
+    ObservableComponent
   ],
   imports: [
     BrowserModule,
